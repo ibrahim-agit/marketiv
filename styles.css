@@ -5,35 +5,102 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-heading-color: #483d89;
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffa6de;
+  --primary-bg-color: var(--secondary-text-color);
+  --secondary-bg-color: var(--primary-heading-color);
+  --additional-bg-color: #b984fd;
+}
+
+/* Font styling */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.secondary-text {
+  color: var(--secondary-text-color); /* Secondary text color */
+}
+
+.additional-bg {
+  background-color: var(
+    --additional-bg-color
+  ); /* Additional background color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-heading-color);
+}
+
 /* Basic styles for header */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: 100vw;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-height: 80px;
 }
 
 header nav ul {
   list-style-type: none;
+  display: flex;
+  gap: 36px;
+  align-items: center;
 }
 
 header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+  width: 100%;
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #666666;
   text-decoration: none;
+  font-weight: 500;
+  line-height: 1.6em;
+  white-space: nowrap;
+}
+
+header .nav-cta {
+  height: 40px;
+  background-color: #fff;
+  padding: 0 15px;
+  border: 1px solid var(--primary-heading-color);
+  border-radius: 8px;
+  color: var(--primary-heading-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2em;
 }
 
 /* Basic styles for hero section */
 .hero {
-  background-image: url("hero-background.jpg");
+  /* background-image: url("hero-background.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 20px; */
 }
 
 .hero h1 {
