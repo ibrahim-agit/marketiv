@@ -1,0 +1,136 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles for header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Basic styles for hero section */
+.hero {
+  background-image: url("hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Basic styles for features section */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature i {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Basic styles for download app section */
+.download-app {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.download-app h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.app-buttons {
+  margin-top: 20px;
+}
+
+.app-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.app-buttons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Basic styles for footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
