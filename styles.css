@@ -39,6 +39,21 @@ body {
   ); /* Additional background color */
 }
 
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +61,21 @@ h4,
 h5,
 h6 {
   color: var(--primary-heading-color);
+}
+
+.sub-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /* Basic styles for header */
@@ -93,24 +123,69 @@ header .nav-cta {
   line-height: 1.2em;
 }
 
-/* Basic styles for hero section */
+/* Homepage styles start */
+
+/* Hero section */
 .hero {
-  /* background-image: url("hero-background.jpg");
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 39px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: min-content;
+}
+
+.hero .hero-content-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 14px;
+  align-items: start;
+}
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 55px;
+  align-items: start;
+  width: 514px;
+  justify-content: center;
+}
+
+.hero .hero-content a {
+  background-color: var(--additional-bg-color);
   color: #fff;
+  border: 1px solid var(--additional-bg-color);
+  border-radius: 10px;
+  padding: 10px 5px;
   text-align: center;
-  padding: 100px 20px; */
+}
+.hero .hero-content a p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  width: 193px;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+.hero .hero-img {
+  display: flex;
+  align-items: center;
+  width: 581px;
+  height: 533px;
+  z-index: 2;
 }
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.hero .hero-img img {
+  display: block;
+  width: 100%;
+  height: 427px;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 .cta-button {
@@ -125,6 +200,69 @@ header .nav-cta {
 
 .cta-button:hover {
   background-color: #e64a19;
+}
+
+/* Home - About section */
+.home-about {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: auto; /* Adjusted height property */
+  justify-content: center;
+  padding: 150px 30px 130px;
+  width: 100%;
+  background-image: url("./assets/bg-purple.svg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-about-img {
+  height: 397px;
+  width: 570px;
+}
+.home-about-img img {
+  height: 396px;
+  width: 475px;
+}
+
+.home-about-content {
+  align-content: start;
+  align-items: start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 570px;
+}
+
+.home-about-content .sub-heading,
+.home-about-content p {
+  color: #fff;
+}
+
+.home-about-headings {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.home-about-headings .heading-top {
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 7px 20px;
+}
+.home-about-headings .heading-bottom {
+  color: #fff;
 }
 
 /* Basic styles for features section */
